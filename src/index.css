@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  font-family: "Poppins";
+  background: #fcfcfc;
+  padding: 3vh;
+}
+.App{
+  width: 600px;
+  margin: 0 auto;
+}
+h1{
+  text-align: center;
+}
+
+/* card styles */
+.card-container{
+  margin-top: 3rem;
+  width: 600px;
+  background-color: aqua;
+  display: flex;
+  gap: 2.5rem;
+  padding: 1rem;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 8px;
+  height: 110px;
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+
+}
+.card-image{
+  width: 80px;
+  border-radius: 100%;
+}
+.card-contact__info--name{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.card-contact__info--details{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 350px;
+  padding: 0 3px;
+  gap: 0.8rem;
+}
+.card-contact__info--details li{
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: rgb(28, 51, 51) ;
+  text-align: left;
+}
+
+/* accordion of info */
+.dropdown-arrow{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.dropdown img{
+  width: 50px;
+}
+
+/* search bar */
+.searchbar{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 1.5rem;
+  margin: 2rem 0 2rem 0;
+}
+.searchbar input{
+  padding: 0.6rem;
+  width: 480px;
+}
+.searchbar input:focus{
+  outline: 1px solid aqua;
+}
